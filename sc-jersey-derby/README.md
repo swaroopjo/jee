@@ -1,1 +1,1 @@
-# Simple Shopping-Cart RestFul Services with Jersey-Derby-maven
+# Simple Services with Jersey-Jaxb-Derby-maven
