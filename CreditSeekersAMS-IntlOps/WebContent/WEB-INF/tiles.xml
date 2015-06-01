@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/pages/template/BaseLayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/pages/template/Header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="nav" value="" />
+        <put-attribute name="footer" value="/pages/template/Footer.jsp" />
+    </definition>
+   <!--   <definition name="showTime.tiles" extends="baseLayout">
+        <put-attribute name="title" value="Server Time" />
+        <put-attribute name="body" value="/WEB-INF/content/DisplayServerTime.jsp" />
+    </definition>-->
+    <definition name="login.success" extends="baseLayout">
+        <put-attribute name="title" value="Total Visits" />
+         <!-- login-success.jsp should change to search.jsp/home.jsp -->
+        <put-attribute name="body" value="/pages/login-success.jsp" />
+        <put-attribute name="nav" value="/pages/template/Navigation.jsp" />
+    </definition>
+    
+    <definition name="register.success" extends="baseLayout">
+        <put-attribute name="title" value="Total Visits" />
+        <!-- login-success.jsp should change to search.jsp/home.jsp -->
+        <put-attribute name="body" value="/pages/login-success.jsp" />
+        <put-attribute name="nav" value="/pages/template/Navigation.jsp" />
+    </definition>
+   
+    
+    <definition name="logout" extends="baseLayout">
+        <put-attribute name="title" value="Total Visits" />
+        <put-attribute name="body" value="/pages/index.jsp" />
+       
+    </definition>
+    
+     <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Total Visits" />
+        <put-attribute name="body" value="/pages/login.jsp" />
+    </definition>
+    
+     <definition name="registration" extends="baseLayout">
+        <put-attribute name="title" value="Total Visits" />
+        <put-attribute name="body" value="/pages/registration.jsp" />
+        
+    </definition>
+	<definition name="searchClient" extends="baseLayout">
+        <put-attribute name="body" value="/pages/searchClient.jsp" />
+        <put-attribute name="nav" value="/pages/template/Navigation.jsp" />
+    </definition>
+    <definition name="viewAccountInfo" extends="baseLayout">
+        <put-attribute name="body" value="/pages/viewAccountInfo.jsp" />
+        <put-attribute name="nav" value="/pages/template/Navigation.jsp" />
+    </definition>
+    <definition name="viewMyAccountInfo" extends="baseLayout">
+        <put-attribute name="body" value="/pages/viewMyAccountInfo.jsp" />
+        <put-attribute name="nav" value="/pages/template/Navigation.jsp" />
+    </definition>
+    
+     <definition name="editAccountInfo" extends="baseLayout">
+        <put-attribute name="body" value="/pages/editAccountInfo.jsp" />
+        <put-attribute name="nav" value="/pages/template/Navigation.jsp" />
+    </definition>
+     <definition name="editMyAccountInfo" extends="baseLayout">
+        <put-attribute name="body" value="/pages/editMyAccountInfo.jsp" />
+        <put-attribute name="nav" value="/pages/template/Navigation.jsp" />
+    </definition>
+    
+</tiles-definitions>
